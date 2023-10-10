@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-      - name: Create zip
+      name: Create zip
     on:
       push:
         branches: [ "v3" ]
