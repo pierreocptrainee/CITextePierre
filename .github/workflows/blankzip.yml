@@ -31,9 +31,9 @@ jobs:
         with:
           version: latest
         env:
-          JF_URL: ${{ secret.JFROG_URL }}
-          JF_USER: ${{ secret.JFROG_USR }}
-          JF_ACCESS_TOKEN: ${{ secret.JFROG_TOKEN }}
+          JF_URL: ${{ secrets.JFROG_URL }}
+          JF_USER: ${{ secrets.JFROG_USR }}
+          JF_ACCESS_TOKEN: ${{ secrets.JFROG_TOKEN }}
     
       - name: archive creation
         run: |
